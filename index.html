@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMTUS Philippines</title>
+  <style>
+    :root {
+      --primary: #1e88e5; /* Change this to match your logo color */
+      --secondary: #0d47a1;
+      --light: #f4f6f9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+    }
+
+    header {
+      position: relative;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+    }
+
+    /* Background image with 50% transparency */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover no-repeat;
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    /* Overlay color (same as logo color) */
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: var(--primary);
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: var(--secondary);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1100px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 { color: var(--primary); }
+
+    .services ul, .steps ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li, .steps li {
+      background: #eef3fb;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--secondary);
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="content">
+    <img src="logo.png" alt="AMTUS Logo" class="logo">
+    <h1>AMTUS Philippines</h1>
+    <p>Empowering Students Through Quality Education</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#vision">Vision & Mission</a>
+  <a href="#services">Services</a>
+  <a href="#registration">Register</a>
+</nav>
+
+<section id="about">
+  <h2>About AMTUS Philippines</h2>
+  <p>AMTUS Philippines is a dedicated tutorial service provider focused on helping students build strong academic foundations. We offer personalized learning experiences tailored to each student's needs, ensuring effective understanding, confidence, and academic growth. Our tutors are committed, passionate, and equipped to guide learners in both online and face-to-face settings.</p>
+</section>
+
+<section id="vision">
+  <h2>Vision</h2>
+  <p>To become a leading tutorial service provider in the Philippines, nurturing confident, competent, and lifelong learners.</p>
+
+  <h2>Mission</h2>
+  <p>To provide accessible, high-quality, and personalized tutorial services that strengthen academic skills and foster a love for learning.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Services Offered</h2>
+  <ul>
+    <li>📘 One-on-One Tutorial (Online & Face-to-Face)</li>
+    <li>👥 Group Tutorial Sessions</li>
+    <li>🧮 Math Fundamentals (Grades 1–6)</li>
+    <li>📖 Reading & English Support</li>
+    <li>📝 Homework Assistance</li>
+    <li>🎯 Customized Learning Plans</li>
+  </ul>
+</section>
+
+<section class="gallery">
+  <img src="https://images.unsplash.com/photo-1584697964192-54a3d3df0bdb" alt="Kids Learning">
+  <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b" alt="Students Studying">
+  <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Classroom Kids">
+</section>
+
+<section id="registration" class="steps">
+  <h2>Registration Process</h2>
+  <ul>
+    <li><strong>Step 1: Inquiry</strong> – Send your details (Student Name, Grade Level, Subject, Preferred Schedule)</li>
+    <li><strong>Step 2: Assessment & Matching</strong> – We assess your needs and match you with the right tutor</li>
+    <li><strong>Step 3: Start Learning</strong> – Begin your personalized tutorial sessions</li>
+  </ul>
+
+ <a href="https://forms.gle/Rj9yoLDPf8mYFKeS7" target="_blank" style="padding:10px 20px;background:#007bff;color:white;text-decoration:none;border-radius:5px;">
+  Click to Register
+</a>
+</a>
+</section>
+
+<footer>
+  <p>&copy; 2026 AMTUS Philippines. All Rights Reserved.</p>
+</footer>
+
+<!-- Messenger Button -->
+<a href="https://m.me/AMTUSPhilippines" target="_blank" class="messenger-btn">
+  💬 Chat with us
+</a>
+
+<style>
+  .messenger-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084FF;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+  }
+
+  .messenger-btn:hover {
+    background-color: #006fd6;
+  }
+</style>
+
+</body>
+</html>
+
+</body>
+</html>
